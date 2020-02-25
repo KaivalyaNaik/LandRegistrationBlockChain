@@ -24,6 +24,7 @@ $(document).ready(function(){
     
     landcontract=new web3.eth.Contract(abi,address);
     web3.eth.getAccounts().then(function(accounts){
+        $('#aid').append(`${accounts[0]}`);
       landcontract.methods.viewAssets().call({
             from : accounts[0]
         }).then(function(assests){
@@ -40,7 +41,8 @@ $(document).ready(function(){
         landcontract.methods.landInfoOwner(item).call().then(function(details){
             console.log(details);
             //document.getElementById('assest').html(details);
-             $("p").html(details[0]+details[1]+details[2]+details[3]);
+            var str=details[0]+" "+details[1]+" "+details[2]+" "+details[3];
+             $("#det").append(`<p>${str}<p>`);
         });
    
     }
