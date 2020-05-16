@@ -1,19 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Profile</title>
+	<title>Kshetra</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-<body>
-    <h id="aid">You are : </h><br>
-    <h id="asset">Assests :</h>
-    <div id ="det">
-        
-    </div>
-    
+<body class="container-login101" style="background-image:url('images/bg-01.jpg'); background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;">
+	<div>
+		<div style="float: left; "  >
+			<div class="wrap-login100 p-t-30 p-b-50" style="margin-top: 50px">
+				<span class="login100-form-title p-b-41" >
+					Profile
+				</span>
+				<form class=" p-b-33 p-t-5">
+					<div id="aid" class="login100-form-title p-b-41">Account: </div>
 
-  
-    
-    <script src="js/truffle-contract.js"></script>
+					<div id="det"class="login100-form-title p-b-41">Assets:</div>
+					<div id="Requestor" style="color: white">You have a Request from : </div>
+
+					<div class="container-login100-form-btn m-t-32">
+						<button id="Accept"class="login100-form-btn">
+							Accept Request
+						</button>
+					</div>
+
+					<div class="container-login100-form-btn m-t-32">
+						<button id="Reject"class="login100-form-btn">
+							Reject Request
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div style="float: right; width: 300px;height: 300px;margin-right: 200px;">
+			<div class="wrap-login100 p-t-30 p-b-50">
+				<span class="login100-form-title p-b-41">
+					Search Land
+				</span>
+				<div class="login100-form validate-form p-b-33 p-t-5">
+					<div class="wrap-input100 validate-input" data-validate = "Enter State">
+						<input class="input100" type="text" name="state" placeholder="State">
+						<span class="focus-input100" data-placeholder="&#xe82d;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter District">
+						<input class="input100" type="text" name="District" placeholder="District">
+						<span class="focus-input100" data-placeholder="&#xe82d;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter City">
+						<input class="input100" type="text" name="city" placeholder="City">
+						<span class="focus-input100" data-placeholder="&#xe82d;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter Survey Number">
+						<input class="input100" type="text" name="sno" placeholder="Survey Number">
+						<span class="focus-input100" data-placeholder="&#xe82d;"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-32">
+						<button id="mkava"class="login100-form-btn">
+							Make Available
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/truffle-contract.js"></script>
     <!-- <script src="js/web3.min.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>      
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
